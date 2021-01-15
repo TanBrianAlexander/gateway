@@ -10,12 +10,13 @@
         * The base uri to consume the User1 Service
         * @var string
         */
-
+        public $secret;
         public $baseUri;
 
         public function __construct(){
 
             $this->baseUri = config('services.users1.base_uri');
+            $this->secret = config('services.user1.secret');
 
         } //construct
 
